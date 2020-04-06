@@ -20,7 +20,7 @@ public class BootReceiver extends BroadcastReceiver {
             //only enabling one type of notifications for demo purposes
             PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1, intent, 0);
             AlarmManager alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
-            alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+            alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
                     SystemClock.elapsedRealtime() + 1000,
                     AlarmManager.INTERVAL_FIFTEEN_MINUTES,
                     pendingIntent);
