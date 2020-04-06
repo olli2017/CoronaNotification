@@ -2,17 +2,17 @@ package com.example.myapplication3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,52 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayOnlineStats(View view) {
         Intent intent = new Intent(this, DisplayOnlineStats.class);
-        startActivity(intent);
+        getStats gs = new getStats(intent);
+        gs.execute();
+    }
+    class getStats extends AsyncTask<Void, Void, Void> {
+        String confirmed;
+        String deaths;
+        String recovered;
+        Intent intent;
+
+        getStats(Intent intent1) {
+            intent = intent1;
+        }
+
+        @Override
+        protected Void doInBackground(Void... params){
+            Document doc = null;
+            try {
+                doc = Jsoup.connect("https://www.worldometers.info/coronavirus/").get();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            String all_cases;
+            if (doc!=null) {
+                all_cases = doc.select("#maincounter-wrap > div > span").text();
+                String[] result = all_cases.split(" ");
+                confirmed = result[0];
+                deaths = result[1];
+                recovered = result[2];
+            }
+            else {
+                confirmed = "Ошибка";
+                deaths = "Ошибка";
+                recovered = "Ошибка";
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            intent.putExtra("CONFIRM_MESSAGE", confirmed);
+            intent.putExtra("DEATHS_MESSAGE", deaths);
+            intent.putExtra("RECOVERED_MESSAGE", recovered);
+            startActivity(intent);
+        }
+
+
     }
 }

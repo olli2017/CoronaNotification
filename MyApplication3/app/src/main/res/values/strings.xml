@@ -3,4 +3,5 @@
     <string name="notificate_me">Notificate me</string>
     <string name="info">Info</string>
     <string name="online_stat">Online Stat</string>
+    <string name="get_stats">Get stats</string>
 </resources>
