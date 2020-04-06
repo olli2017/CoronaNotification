@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication3">
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -16,7 +17,10 @@
 
         <activity
             android:name=".NotificationSettingsActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            tools:ignore="LockedOrientationActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -25,7 +29,10 @@
         </activity>
         <activity
             android:name=".DisplayOnlineStats"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            tools:ignore="LockedOrientationActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -34,14 +41,20 @@
         </activity>
         <activity
             android:name=".DisplayInfoActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            tools:ignore="LockedOrientationActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,11 +63,15 @@
         </activity>
         <activity
             android:name=".Loader"
-            android:noHistory="true"></activity>
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            tools:ignore="LockedOrientationActivity"></activity>
 
         <receiver
             android:name=".AlarmBroadcastReceiver"
-            android:enabled="true" />
+            android:enabled="true"
+            />
         <receiver
             android:name=".BootReceiver"
             android:enabled="false">
