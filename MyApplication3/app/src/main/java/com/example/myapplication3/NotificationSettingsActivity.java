@@ -47,7 +47,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
                 SystemClock.elapsedRealtime() + 1000,
                 3 * 1000,
-//                AlarmManager.INTERVAL_FIFTEEN_MINUTES,
+//              AlarmManager.INTERVAL_FIFTEEN_MINUTES,
                 pendingIntent);
 
         Toast.makeText(NotificationSettingsActivity.this, "Alarm set", Toast.LENGTH_LONG).show();

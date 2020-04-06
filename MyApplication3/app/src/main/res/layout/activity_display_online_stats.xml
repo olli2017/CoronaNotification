@@ -10,6 +10,8 @@
         android:id="@+id/deathTextView"
         android:layout_width="336dp"
         android:layout_height="151dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="#DC064F"
         android:gravity="center"
@@ -19,7 +21,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recoveredTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/confirmedTextView" />
 
@@ -27,7 +29,8 @@
         android:id="@+id/confirmedTextView"
         android:layout_width="336dp"
         android:layout_height="151dp"
-        android:layout_margin="8dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="#2196F3"
         android:breakStrategy="balanced"
@@ -38,9 +41,7 @@
         android:textIsSelectable="true"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/deathTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,6 +49,7 @@
         android:id="@+id/recoveredTextView"
         android:layout_width="336dp"
         android:layout_height="151dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="#4DC652"
         android:breakStrategy="high_quality"
@@ -58,8 +60,34 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deathTextView" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
