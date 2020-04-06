@@ -1,7 +1,5 @@
 package com.example.myapplication3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -13,9 +11,18 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 
 public class NotificationSettingsActivity extends AppCompatActivity {
+
+    public static final String FIFTEEN_MINUTES = "15 минут";
+    public static final String THIRTY_MINUTES = "30 минут";
+    public static final String ONE_HOUR = "1 час";
+    public static final String THREE_HOURS = "3 часа";
+    public static final String SIX_HOURS = "6 часов";
+    public static final String ONE_DAY = "1 день";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +49,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
 
 
         Spinner dropdown = findViewById(R.id.spinner1);
-        String[] items = new String[]{"15 minutes", "30 minutes", "1 hour", "3 hours", "6 hours", "1 day"};
+        String[] items = new String[]{FIFTEEN_MINUTES, THIRTY_MINUTES, ONE_HOUR, THREE_HOURS, SIX_HOURS, ONE_DAY};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
     }
@@ -53,12 +60,12 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         HashMap<String, Long> str2time = new HashMap<String, Long>() {
             {
-                put("15 minutes", AlarmManager.INTERVAL_FIFTEEN_MINUTES);
-                put("30 minutes", AlarmManager.INTERVAL_HALF_HOUR);
-                put("1 hour", AlarmManager.INTERVAL_HOUR);
-                put("3 hours", AlarmManager.INTERVAL_HOUR * 3);
-                put("6 hours", AlarmManager.INTERVAL_HOUR * 6);
-                put("1 day", AlarmManager.INTERVAL_DAY);
+                put(FIFTEEN_MINUTES, AlarmManager.INTERVAL_FIFTEEN_MINUTES);
+                put(THIRTY_MINUTES, AlarmManager.INTERVAL_HALF_HOUR);
+                put(ONE_HOUR, AlarmManager.INTERVAL_HOUR);
+                put(THREE_HOURS, AlarmManager.INTERVAL_HOUR * 3);
+                put(SIX_HOURS, AlarmManager.INTERVAL_HOUR * 6);
+                put(ONE_DAY, AlarmManager.INTERVAL_DAY);
             }
         };
         Spinner dropdown = findViewById(R.id.spinner1);
