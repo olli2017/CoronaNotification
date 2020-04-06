@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">My Application3</string>
-    <string name="notificate_me">Notificate me</string>
-    <string name="info">Info</string>
-    <string name="online_stat">Online Stat</string>
+    <string name="notificate_me">Уведомить меня</string>
+    <string name="info">Информация</string>
+    <string name="online_stat">Онлайн статистика</string>
     <string name="get_stats">Get stats</string>
-    <string name="turn_off_notification">Turn off</string>
+    <string name="turn_off_notification">Выключить уведомления</string>
+    <string name="setting">Настройки</string>
 </resources>
