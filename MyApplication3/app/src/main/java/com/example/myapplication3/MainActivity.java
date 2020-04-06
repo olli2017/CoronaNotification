@@ -1,11 +1,11 @@
 package com.example.myapplication3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         GetStats gs = new GetStats(intent);
         gs.execute();
     }
+
     class GetStats extends AsyncTask<Void, Void, Void> {
         String confirmed;
         String deaths;
