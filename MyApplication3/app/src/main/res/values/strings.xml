@@ -4,4 +4,5 @@
     <string name="info">Info</string>
     <string name="online_stat">Online Stat</string>
     <string name="get_stats">Get stats</string>
+    <string name="turn_off_notification">Turn off</string>
 </resources>

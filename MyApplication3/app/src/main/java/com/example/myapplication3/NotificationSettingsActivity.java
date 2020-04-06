@@ -22,11 +22,20 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_settings);
         Button button = (Button) findViewById(R.id.notify_button2);
+        Button button_off = findViewById(R.id.button_off);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startAlarm();
+                NotificationHelper.enableBootReceiver(NotificationSettingsActivity.this);
+            }
+        });
+
+        button_off.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                endAlarm();
                 NotificationHelper.enableBootReceiver(NotificationSettingsActivity.this);
             }
         });
@@ -66,5 +75,13 @@ public class NotificationSettingsActivity extends AppCompatActivity {
                 pendingIntent);
 
         Toast.makeText(NotificationSettingsActivity.this, "Alarm set", Toast.LENGTH_LONG).show();
+    }
+
+    public void endAlarm() {
+        Intent intent = new Intent(NotificationSettingsActivity.this, AlarmBroadcastReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(NotificationSettingsActivity.this, 1, intent, 0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager.cancel(pendingIntent);
+        Toast.makeText(NotificationSettingsActivity.this, "Alarm turn off", Toast.LENGTH_LONG).show();
     }
 }
