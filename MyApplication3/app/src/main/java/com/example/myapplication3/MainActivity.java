@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayOnlineStats(View view) {
+        Intent first = new Intent(this, Loader.class);
+        startActivity(first);
         Intent intent = new Intent(this, DisplayOnlineStats.class);
         getStats gs = new getStats(intent);
         gs.execute();

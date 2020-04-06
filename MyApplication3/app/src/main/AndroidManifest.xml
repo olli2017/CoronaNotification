@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Loader"></activity>
         <activity
             android:name=".NotificationSettingsActivity"
             android:parentActivityName=".MainActivity">
