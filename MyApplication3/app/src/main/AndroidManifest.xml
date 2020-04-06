@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".NotificationSettingsActivity"
             android:parentActivityName=".MainActivity">
@@ -49,8 +50,8 @@
         </activity>
         <activity
             android:name=".Loader"
-            android:noHistory="true">
-        </activity>
+            android:noHistory="true"></activity>
+
         <receiver
             android:name=".AlarmBroadcastReceiver"
             android:enabled="true" />
