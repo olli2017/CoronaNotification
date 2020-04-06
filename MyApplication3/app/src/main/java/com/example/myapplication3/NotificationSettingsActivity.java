@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 public class NotificationSettingsActivity extends AppCompatActivity {
 
     @Override
@@ -32,10 +34,10 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         //get the spinner from the xml.
         Spinner dropdown = findViewById(R.id.spinner1);
 //create a list of items for the spinner.
-        Integer[] items = new Integer[]{1 , 2, 3};
+        String[] items = new String[]{"15 minutes", "30 minutes", "1 hour", "3 hours", "6 hours", "1 day"};
 //create an adapter to describe how the items are displayed, adapters are used in several places in android.
 //There are multiple variations of this, but this is the basic variant.
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 //set the spinners adapter to the previously created one.
         dropdown.setAdapter(adapter);
     }
@@ -44,9 +46,22 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(NotificationSettingsActivity.this, AlarmBroadcastReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(NotificationSettingsActivity.this, 1, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        HashMap<String, Long> str2time = new HashMap<String, Long>() {
+            {
+                put("15 minutes", AlarmManager.INTERVAL_FIFTEEN_MINUTES);
+                put("30 minutes", AlarmManager.INTERVAL_HALF_HOUR);
+                put("1 hour", AlarmManager.INTERVAL_HOUR);
+                put("3 hours", AlarmManager.INTERVAL_HOUR * 3);
+                put("6 hours", AlarmManager.INTERVAL_HOUR * 6);
+                put("1 day", AlarmManager.INTERVAL_DAY);
+            }
+        };
+        Spinner dropdown = findViewById(R.id.spinner1);
+        String time_name = dropdown.getSelectedItem().toString();
+        Long time = str2time.getOrDefault(time_name, AlarmManager.INTERVAL_DAY);
         alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
                 SystemClock.elapsedRealtime() + 1000,
-                3 * 1000,
+                time,
 //              AlarmManager.INTERVAL_FIFTEEN_MINUTES,
                 pendingIntent);
 
