@@ -22,7 +22,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_settings);
         Button button = (Button) findViewById(R.id.notify_button2);
-        Button button_off = findViewById(R.id.button_off);
+        Button buttonOff = findViewById(R.id.button_off);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +32,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
             }
         });
 
-        button_off.setOnClickListener(new View.OnClickListener() {
+        buttonOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 endAlarm();
@@ -40,14 +40,10 @@ public class NotificationSettingsActivity extends AppCompatActivity {
             }
         });
 
-        //get the spinner from the xml.
+
         Spinner dropdown = findViewById(R.id.spinner1);
-//create a list of items for the spinner.
         String[] items = new String[]{"15 minutes", "30 minutes", "1 hour", "3 hours", "6 hours", "1 day"};
-//create an adapter to describe how the items are displayed, adapters are used in several places in android.
-//There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-//set the spinners adapter to the previously created one.
         dropdown.setAdapter(adapter);
     }
 
@@ -71,7 +67,6 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
                 SystemClock.elapsedRealtime() + 1000,
                 time,
-//              AlarmManager.INTERVAL_FIFTEEN_MINUTES,
                 pendingIntent);
 
         Toast.makeText(NotificationSettingsActivity.this, "Alarm set", Toast.LENGTH_LONG).show();

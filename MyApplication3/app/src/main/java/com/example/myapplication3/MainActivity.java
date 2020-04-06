@@ -33,16 +33,16 @@ public class MainActivity extends AppCompatActivity {
         Intent first = new Intent(this, Loader.class);
         startActivity(first);
         Intent intent = new Intent(this, DisplayOnlineStats.class);
-        getStats gs = new getStats(intent);
+        GetStats gs = new GetStats(intent);
         gs.execute();
     }
-    class getStats extends AsyncTask<Void, Void, Void> {
+    class GetStats extends AsyncTask<Void, Void, Void> {
         String confirmed;
         String deaths;
         String recovered;
         Intent intent;
 
-        getStats(Intent intent1) {
+        GetStats(Intent intent1) {
             intent = intent1;
         }
 
