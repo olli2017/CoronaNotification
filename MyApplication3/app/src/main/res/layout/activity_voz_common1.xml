@@ -6,8 +6,9 @@
     tools:context=".voz.common_advice.VozCommon1"
     android:background="#009ACA">
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/voz_common1"
+        android:src="@drawable/voz_common2"
         android:scaleType="fitCenter"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
