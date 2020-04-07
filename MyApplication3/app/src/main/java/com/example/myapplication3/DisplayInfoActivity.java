@@ -1,5 +1,6 @@
 package com.example.myapplication3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,7 +16,7 @@ public class DisplayInfoActivity extends AppCompatActivity {
     }
 
     public void fullImageVoz1(View view) {
-        ImageButton imageButton = (ImageButton) view.findViewById(R.id.imageButton);
-
+        Intent loaderIntent = new Intent(this, Voz1.class);
+        startActivity(loaderIntent);
     }
 }
