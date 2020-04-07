@@ -22,9 +22,6 @@
         </activity>
         <activity android:name=".Voz4" />
         <activity android:name=".Voz3" />
-        <activity
-            android:name=".ui.login.Voz3"
-            android:label="@string/title_activity_voz3" />
         <activity android:name=".Voz2" />
         <activity android:name=".Voz1" />
         <activity
