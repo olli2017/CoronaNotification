@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication3.concreteAdvice.DisplayCommonAdviceActivity;
+import com.example.myapplication3.concreteAdvice.DisplayInfectionAdviceActivity;
 import com.example.myapplication3.concreteAdvice.DisplayTripAdviceActivity;
 
 public class DisplayInfoActivity extends AppCompatActivity {
@@ -17,13 +18,18 @@ public class DisplayInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_info);
     }
 
-    public void openAdvice(View view) {
+    public void openCommonAdvice(View view) {
         Intent loaderIntent = new Intent(this, DisplayCommonAdviceActivity.class);
         startActivity(loaderIntent);
     }
 
-    public void openTripInfo(View view) {
+    public void openTripAdvice(View view) {
         Intent loaderIntent = new Intent(this, DisplayTripAdviceActivity.class);
+        startActivity(loaderIntent);
+    }
+
+    public void openInfectionAdvice(View view) {
+        Intent loaderIntent = new Intent(this, DisplayInfectionAdviceActivity.class);
         startActivity(loaderIntent);
     }
 }
