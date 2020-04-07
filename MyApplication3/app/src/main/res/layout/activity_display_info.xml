@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.464"
-        app:srcCompat="@drawable/voz1" />
+        app:srcCompat="@drawable/voz1_ico" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/voz3" />
+        app:srcCompat="@drawable/voz3_ico" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/voz4" />
+        app:srcCompat="@drawable/voz4_ico" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -69,6 +69,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/voz2" />
+        app:srcCompat="@drawable/voz2_ico" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
