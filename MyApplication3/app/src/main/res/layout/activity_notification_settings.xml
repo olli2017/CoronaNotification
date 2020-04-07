@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fon1"
     tools:context=".NotificationSettingsActivity">
 
     <Spinner
@@ -19,9 +20,9 @@
 
     <Button
         android:id="@+id/notify_button2"
-        android:layout_width="169dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="440dp"
+        android:layout_width="226dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="400dp"
         android:layout_marginBottom="186dp"
         android:text="@string/notificate_me"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,10 +36,10 @@
         android:id="@+id/button_off"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="68dp"
         android:text="@string/turn_off_notification"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notify_button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
