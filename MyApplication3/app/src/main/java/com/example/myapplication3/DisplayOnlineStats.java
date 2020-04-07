@@ -1,17 +1,10 @@
 package com.example.myapplication3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-
-import java.io.IOException;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DisplayOnlineStats extends AppCompatActivity {
     @Override
@@ -28,8 +21,8 @@ public class DisplayOnlineStats extends AppCompatActivity {
         String deaths = intent.getStringExtra("DEATHS_MESSAGE");
         String recovered = intent.getStringExtra("RECOVERED_MESSAGE");
 
-        textView.setText("Confirmed Cases: " + confirmed);
-        textView2.setText("Deaths: " + deaths);
-        textView3.setText("Recovered: " + recovered);
+        textView.setText("Заражений:\n" + confirmed);
+        textView2.setText("Смертей:\n" + deaths);
+        textView3.setText("Выздоровлений:\n" + recovered);
     }
 }

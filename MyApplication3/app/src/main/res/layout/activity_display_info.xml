@@ -7,10 +7,22 @@
     tools:context=".DisplayInfoActivity">
 
     <Button
+        android:id="@+id/button4"
+        android:layout_width="232dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="196dp"
+        android:onClick="openSymptomsAdvice"
+        android:text="@string/symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="232dp"
         android:layout_height="110dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="532dp"
         android:onClick="openTripAdvice"
         android:text="@string/trip_advice"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,11 +34,11 @@
         android:id="@+id/button3"
         android:layout_width="232dp"
         android:layout_height="110dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="364dp"
         android:onClick="openInfectionAdvice"
         android:text="@string/trip_infection"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

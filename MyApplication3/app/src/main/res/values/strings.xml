@@ -18,4 +18,5 @@
     <string name="open_advice">Общие советы</string>
     <string name="trip_advice">Советы в поездке</string>
     <string name="trip_infection">советы при заражении</string>
+    <string name="symptoms">Симптомы</string>
 </resources>

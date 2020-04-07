@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication3.concreteAdvice.DisplayCommonAdviceActivity;
 import com.example.myapplication3.concreteAdvice.DisplayInfectionAdviceActivity;
+import com.example.myapplication3.concreteAdvice.DisplaySymptomsAdviceActivity;
 import com.example.myapplication3.concreteAdvice.DisplayTripAdviceActivity;
 
 public class DisplayInfoActivity extends AppCompatActivity {
@@ -30,6 +31,11 @@ public class DisplayInfoActivity extends AppCompatActivity {
 
     public void openInfectionAdvice(View view) {
         Intent loaderIntent = new Intent(this, DisplayInfectionAdviceActivity.class);
+        startActivity(loaderIntent);
+    }
+
+    public void openSymptomsAdvice(View view) {
+        Intent loaderIntent = new Intent(this, DisplaySymptomsAdviceActivity.class);
         startActivity(loaderIntent);
     }
 }
