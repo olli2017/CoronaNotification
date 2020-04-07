@@ -1,4 +1,4 @@
-package com.example.myapplication3.concreteInfo;
+package com.example.myapplication3.concreteAdvice;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import com.example.myapplication3.voz.trip_advice.VozTrip2;
 import com.example.myapplication3.voz.trip_advice.VozTrip3;
 import com.example.myapplication3.voz.trip_advice.VozTrip4;
 
-public class DisplayTripInfoActivity extends AppCompatActivity {
+public class DisplayTripAdviceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

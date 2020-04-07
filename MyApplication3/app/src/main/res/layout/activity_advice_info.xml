@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayAdviceActivity">
+    tools:context=".concreteAdvice.DisplayCommonAdviceActivity">
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -13,14 +13,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="16dp"
-        android:onClick="fullImageVoz1"
+        android:onClick="fullImageVozCommon1"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.464"
-        app:srcCompat="@drawable/voz1_ico" />
+        app:srcCompat="@drawable/voz_common1_ico" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -29,13 +29,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="40dp"
-        android:onClick="fullImageVoz3"
+        android:onClick="fullImageVozCommon3"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/voz3_ico" />
+        app:srcCompat="@drawable/voz_common3_ico" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -44,13 +44,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="40dp"
-        android:onClick="fullImageVoz4"
+        android:onClick="fullImageVozCommon4"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/voz4_ico" />
+        app:srcCompat="@drawable/voz_common4_ico" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -59,12 +59,12 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:onClick="fullImageVoz2"
+        android:onClick="fullImageVozCommon2"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageButton4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/voz2_ico" />
+        app:srcCompat="@drawable/voz_common2_ico" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

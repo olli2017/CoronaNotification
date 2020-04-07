@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".concreteInfo.DisplayTripInfoActivity"
+            android:name=".concreteAdvice.DisplayTripAdviceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".DisplayInfoActivity"
             android:screenOrientation="portrait"
@@ -26,10 +26,10 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".voz.common_advice.Voz4" />
-        <activity android:name=".voz.common_advice.Voz3" />
-        <activity android:name=".voz.common_advice.Voz2" />
-        <activity android:name=".voz.common_advice.Voz1" />
+        <activity android:name=".voz.common_advice.VozCommon4" />
+        <activity android:name=".voz.common_advice.VozCommon3" />
+        <activity android:name=".voz.common_advice.VozCommon2" />
+        <activity android:name=".voz.common_advice.VozCommon1" />
         <activity android:name=".voz.trip_advice.VozTrip1" />
         <activity android:name=".voz.trip_advice.VozTrip2" />
         <activity android:name=".voz.trip_advice.VozTrip3" />
@@ -59,7 +59,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".DisplayAdviceActivity"
+            android:name=".concreteAdvice.DisplayCommonAdviceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".DisplayInfoActivity"
             android:screenOrientation="portrait"
