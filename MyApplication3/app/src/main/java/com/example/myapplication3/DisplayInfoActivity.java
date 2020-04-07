@@ -1,10 +1,10 @@
 package com.example.myapplication3;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class DisplayInfoActivity extends AppCompatActivity {
 
@@ -14,8 +14,8 @@ public class DisplayInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_info);
     }
 
-    public void fullImageVoz1(View view) {
-        ImageButton imageButton = (ImageButton) view.findViewById(R.id.imageButton);
-
+    public void openAdvice(View view) {
+        Intent loaderIntent = new Intent(this, DisplayAdviceActivity.class);
+        startActivity(loaderIntent);
     }
 }
