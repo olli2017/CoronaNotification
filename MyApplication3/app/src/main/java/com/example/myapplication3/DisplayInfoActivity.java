@@ -1,11 +1,10 @@
 package com.example.myapplication3;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class DisplayInfoActivity extends AppCompatActivity {
 
@@ -15,20 +14,8 @@ public class DisplayInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_info);
     }
 
-    public void fullImageVoz1(View view) {
-        Intent loaderIntent = new Intent(this, Voz1.class);
-        startActivity(loaderIntent);
-    }
-    public void fullImageVoz2(View view) {
-        Intent loaderIntent = new Intent(this, Voz2.class);
-        startActivity(loaderIntent);
-    }
-    public void fullImageVoz3(View view) {
-        Intent loaderIntent = new Intent(this, Voz3.class);
-        startActivity(loaderIntent);
-    }
-    public void fullImageVoz4(View view) {
-        Intent loaderIntent = new Intent(this, Voz4.class);
+    public void openAdvice(View view) {
+        Intent loaderIntent = new Intent(this, DisplayAdviceActivity.class);
         startActivity(loaderIntent);
     }
 }
