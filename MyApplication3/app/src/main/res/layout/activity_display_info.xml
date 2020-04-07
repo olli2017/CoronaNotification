@@ -7,6 +7,30 @@
     tools:context=".DisplayInfoActivity">
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="232dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="384dp"
+        android:onClick="openTripInfo"
+        android:text="@string/trip_advice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="232dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="204dp"
+        android:onClick="openAdvice"
+        android:text="@string/open_advice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="232dp"
         android:layout_height="110dp"
