@@ -14,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DisplayInfoActivity"></activity>
+        <activity android:name=".DisplayInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
         <activity android:name=".Voz4" />
         <activity android:name=".Voz3" />
         <activity
@@ -49,7 +54,7 @@
         <activity
             android:name=".DisplayAdviceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".DisplayInfoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
 
