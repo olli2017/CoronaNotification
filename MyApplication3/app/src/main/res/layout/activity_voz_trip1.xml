@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".voz.common_advice.Voz3"
-    android:background="#009ACA">
+    android:background="#43CFEC"
+    tools:context=".voz.trip_advice.VozTrip1">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/voz3"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        android:src="@drawable/voz_trip1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,11 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication3.voz.common_advice.Voz1;
+import com.example.myapplication3.voz.common_advice.Voz2;
+import com.example.myapplication3.voz.common_advice.Voz3;
+import com.example.myapplication3.voz.common_advice.Voz4;
+
 public class DisplayAdviceActivity extends AppCompatActivity {
 
     @Override
