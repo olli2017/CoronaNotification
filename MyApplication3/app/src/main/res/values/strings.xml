@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">КоронаГид</string>
-    <string name="notificate_me">Уведомить меня</string>
+    <string name="notificate_me">Включить уведомления</string>
     <string name="info">Информация</string>
     <string name="online_stat">Онлайн статистика</string>
     <string name="get_stats">Get stats</string>
