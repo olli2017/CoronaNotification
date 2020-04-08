@@ -21,8 +21,8 @@ public class DisplayOnlineStats extends AppCompatActivity {
         String deaths = intent.getStringExtra("DEATHS_MESSAGE");
         String recovered = intent.getStringExtra("RECOVERED_MESSAGE");
 
-        textView.setText("Заражений:\n" + confirmed);
-        textView2.setText("Смертей:\n" + deaths);
-        textView3.setText("Выздоровлений:\n" + recovered);
+        textView.setText("Заражено:\n" + confirmed);
+        textView2.setText("Погибло:\n" + deaths);
+        textView3.setText("Выздоровело:\n" + recovered);
     }
 }
