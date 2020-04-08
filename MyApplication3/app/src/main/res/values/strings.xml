@@ -1,20 +1,12 @@
 <resources>
-    <string name="app_name">My Application3</string>
+    <string name="app_name">КоронаГид</string>
     <string name="notificate_me">Уведомить меня</string>
     <string name="info">Информация</string>
     <string name="online_stat">Онлайн статистика</string>
     <string name="get_stats">Get stats</string>
     <string name="turn_off_notification">Выключить уведомления</string>
-    <string name="setting">Настройки</string>
-    <string name="title_activity_voz3">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="setting">Настройки</string>=
+    <string name="welcome">"Welcome !"</string>==
     <string name="open_advice">Общие советы</string>
     <string name="trip_advice">Советы в поездке</string>
     <string name="trip_infection">советы при заражении</string>
