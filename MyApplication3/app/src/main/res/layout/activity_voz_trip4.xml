@@ -6,9 +6,12 @@
     android:background="#43CFEC"
     tools:context=".voz.trip_advice.VozTrip4">
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitCenter"
-        android:src="@drawable/voz_trip4" />
+        android:src="@drawable/voz_trip4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
