@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FEFEFE"
     tools:context=".concreteAdvice.DisplaySymptomsAdviceActivity">
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FEFEFE"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:scaleType="fitCenter"
         android:src="@drawable/symptoms" />
 </androidx.constraintlayout.widget.ConstraintLayout>
