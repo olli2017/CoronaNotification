@@ -6,9 +6,12 @@
     android:background="#F2F2F2"
     tools:context=".concreteAdvice.DisplayInfectionAdviceActivity">
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitCenter"
-        android:src="@drawable/tass_infection" />
+        android:src="@drawable/tass_infection"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

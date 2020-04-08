@@ -1,11 +1,10 @@
 package com.example.myapplication3.concreteAdvice;
 
 import android.os.Bundle;
-import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.myapplication3.MyUtils;
 import com.example.myapplication3.R;
+import com.github.chrisbanes.photoview.PhotoView;
 
 public class DisplayInfectionAdviceActivity extends AppCompatActivity {
 
@@ -13,12 +12,8 @@ public class DisplayInfectionAdviceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_infection_advice);
-        this.getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        PhotoView photoView = (PhotoView) findViewById(R.id.imageView);
+        photoView.setImageResource(R.drawable.tass_infection);
+        MyUtils.setsetSystemUiVisibility(this);
     }
 }

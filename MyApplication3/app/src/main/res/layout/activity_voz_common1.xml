@@ -5,9 +5,12 @@
     android:layout_height="fill_parent"
     tools:context=".voz.common_advice.VozCommon1"
     android:background="#009ACA">
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/voz_common1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         android:scaleType="fitCenter"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
