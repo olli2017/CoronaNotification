@@ -7,11 +7,10 @@
     tools:context=".NotificationSettingsActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fon1" />
+        android:src="@drawable/main_back3"
+        android:scaleType="centerCrop"/>
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="0dp"
@@ -29,11 +28,10 @@
         android:layout_height="137dp"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/bg_rounded"
-        android:backgroundTint="#8FEFA780"
         android:drawableLeft="@drawable/alarm"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/cardview_light_background"
         android:text="@string/notificate_me"
-        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button_off"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,11 +47,10 @@
         android:layout_height="137dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="193dp"
-        android:background="@drawable/bg_rounded"
-        android:backgroundTint="#8FEFA780"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/cardview_light_background"
         android:drawableLeft="@drawable/dont_alarm"
         android:text="@string/turn_off_notification"
-        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
