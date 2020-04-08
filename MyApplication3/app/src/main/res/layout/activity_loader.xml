@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/statistic_background"
+        android:src="@drawable/main_back3"
         android:scaleType="centerCrop"/>
     <ProgressBar
         android:id="@+id/progressBar"
