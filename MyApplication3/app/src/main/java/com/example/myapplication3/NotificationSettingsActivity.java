@@ -76,7 +76,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
                 time,
                 pendingIntent);
 
-        Toast.makeText(NotificationSettingsActivity.this, "Alarm set", Toast.LENGTH_LONG).show();
+        Toast.makeText(NotificationSettingsActivity.this, "Напоминание установлено", Toast.LENGTH_LONG).show();
     }
 
     public void endAlarm() {
@@ -84,6 +84,6 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(NotificationSettingsActivity.this, 1, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         alarmManager.cancel(pendingIntent);
-        Toast.makeText(NotificationSettingsActivity.this, "Alarm turn off", Toast.LENGTH_LONG).show();
+        Toast.makeText(NotificationSettingsActivity.this, "Напоминание выключено", Toast.LENGTH_LONG).show();
     }
 }
