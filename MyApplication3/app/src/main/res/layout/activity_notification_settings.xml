@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon1"
     tools:context=".NotificationSettingsActivity">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fon1"
+        android:scaleType="centerCrop"/>
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="0dp"

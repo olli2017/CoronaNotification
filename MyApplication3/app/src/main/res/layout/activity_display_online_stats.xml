@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/statistic_background"
     tools:context=".DisplayOnlineStats">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/statistic_background"
+        android:scaleType="centerCrop"/>
     <TextView
         android:id="@+id/deathTextView"
         android:layout_width="336dp"
