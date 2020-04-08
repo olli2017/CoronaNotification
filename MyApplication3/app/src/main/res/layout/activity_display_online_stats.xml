@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/statistic_background"
     tools:context=".DisplayOnlineStats">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_back3" />
 
     <TextView
         android:id="@+id/deathTextView"
@@ -32,7 +37,7 @@
         android:layout_width="336dp"
         android:layout_height="151dp"
         android:layout_margin="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="#B32196F3"
         android:breakStrategy="balanced"
@@ -52,7 +57,7 @@
         android:id="@+id/recoveredTextView"
         android:layout_width="336dp"
         android:layout_height="151dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/bg_rounded"
         android:backgroundTint="#CC4DC652"
         android:breakStrategy="high_quality"
@@ -93,5 +98,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:autoLink="web"
+        android:textColorLink="#00215C"
+        android:text="Статистика с сайта www.worldometers.info/coronavirus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

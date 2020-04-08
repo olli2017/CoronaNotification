@@ -27,8 +27,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.wash_hands_icon, options);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "default")
-                .setContentTitle("Coronavirus")
-                .setContentText("Wash your hands")
+                .setContentTitle("Берегите себя")
+                .setContentText("Пора помыть руки")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
