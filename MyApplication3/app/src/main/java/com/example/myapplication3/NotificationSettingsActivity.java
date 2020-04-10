@@ -71,7 +71,7 @@ public class NotificationSettingsActivity extends AppCompatActivity {
         Spinner dropdown = findViewById(R.id.spinner1);
         String time_name = dropdown.getSelectedItem().toString();
         Long time = str2time.getOrDefault(time_name, AlarmManager.INTERVAL_DAY);
-        alarmManager.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
                 SystemClock.elapsedRealtime() + 1000,
                 time,
                 pendingIntent);
