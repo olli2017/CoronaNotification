@@ -3,10 +3,9 @@
     <string name="notificate_me">Включить уведомления</string>
     <string name="info">Информация</string>
     <string name="online_stat">Онлайн статистика</string>
-    <string name="get_stats">Get stats</string>
     <string name="turn_off_notification">Выключить уведомления</string>
     <string name="setting">Настройки</string>=
-    <string name="welcome">"Welcome !"</string>==
+    ==
     <string name="open_advice">Общие советы</string>
     <string name="trip_advice">Советы в поездке</string>
     <string name="trip_infection">советы при заражении</string>

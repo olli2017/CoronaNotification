@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication3">
+    package="com.punk716.coronaGid">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -15,51 +15,51 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".concreteAdvice.DisplayTripAdviceActivity"
+            android:name="com.punk716.coronaGid.concreteAdvice.DisplayTripAdviceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".DisplayInfoActivity"
+            android:parentActivityName="com.punk716.coronaGid.DisplayInfoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".DisplayInfoActivity"
+            android:name="com.punk716.coronaGid.DisplayInfoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.punk716.coronaGid.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".voz.common_advice.VozCommon4" />
-        <activity android:name=".voz.common_advice.VozCommon3" />
-        <activity android:name=".voz.common_advice.VozCommon2" />
-        <activity android:name=".voz.common_advice.VozCommon1" />
-        <activity android:name=".voz.trip_advice.VozTrip1" />
-        <activity android:name=".voz.trip_advice.VozTrip2" />
-        <activity android:name=".voz.trip_advice.VozTrip3" />
-        <activity android:name=".voz.trip_advice.VozTrip4" />
-        <activity android:name=".concreteAdvice.DisplayInfectionAdviceActivity" />
-        <activity android:name=".concreteAdvice.DisplaySymptomsAdviceActivity" />
+        <activity android:name="com.punk716.coronaGid.voz.common_advice.VozCommon4" />
+        <activity android:name="com.punk716.coronaGid.voz.common_advice.VozCommon3" />
+        <activity android:name="com.punk716.coronaGid.voz.common_advice.VozCommon2" />
+        <activity android:name="com.punk716.coronaGid.voz.common_advice.VozCommon1" />
+        <activity android:name="com.punk716.coronaGid.voz.trip_advice.VozTrip1" />
+        <activity android:name="com.punk716.coronaGid.voz.trip_advice.VozTrip2" />
+        <activity android:name="com.punk716.coronaGid.voz.trip_advice.VozTrip3" />
+        <activity android:name="com.punk716.coronaGid.voz.trip_advice.VozTrip4" />
+        <activity android:name="com.punk716.coronaGid.concreteAdvice.DisplayInfectionAdviceActivity" />
+        <activity android:name="com.punk716.coronaGid.concreteAdvice.DisplaySymptomsAdviceActivity" />
 
         <activity
-            android:name=".NotificationSettingsActivity"
+            android:name="com.punk716.coronaGid.NotificationSettingsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.punk716.coronaGid.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
         <activity
-            android:name=".DisplayOnlineStats"
+            android:name="com.punk716.coronaGid.DisplayOnlineStats"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.punk716.coronaGid.MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
         <activity
-            android:name=".concreteAdvice.DisplayCommonAdviceActivity"
+            android:name="com.punk716.coronaGid.concreteAdvice.DisplayCommonAdviceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".DisplayInfoActivity"
+            android:parentActivityName="com.punk716.coronaGid.DisplayInfoActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.punk716.coronaGid.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -69,17 +69,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Loader"
+            android:name="com.punk716.coronaGid.Loader"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:noHistory="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
 
         <receiver
-            android:name=".AlarmBroadcastReceiver"
+            android:name="com.punk716.coronaGid.AlarmBroadcastReceiver"
             android:enabled="true" />
         <receiver
-            android:name=".BootReceiver"
+            android:name="com.punk716.coronaGid.BootReceiver"
             android:enabled="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
